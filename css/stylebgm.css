@@ -1,0 +1,57 @@
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* jarak logo & tombol */
+}
+
+.music-btn {
+    background: transparent;
+    border: 2px solid #3557ff;
+    color: #eaeaea;
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+    background: #3557ff;
+    color: #fff;
+    box-shadow: 0 0 8px #3557ff;
+}
+
+.music-container {
+  position: relative;
+}
+
+#volume-control {
+  position: absolute;
+
+  top: 60px;
+  left: 20px;
+
+  width: 6px;
+  height: 120px;
+
+  writing-mode: vertical-lr;
+  direction: rtl;
+
+  background: transparent;
+
+  opacity: 0;              /* ⬅️ sembunyi */
+  pointer-events: none;    /* ⬅️ tidak bisa diklik */
+}
+
+/* saat muncul */
+#volume-control.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* muncul saat hover */
+.music-container:hover #volume-control {
+  opacity: 1;
+  transform: scale(1);
+}
+

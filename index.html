@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in Page</title>
+    <link rel="stylesheet" href="stylehome.css" />
+    <link rel="stylesheet" href="css/stylenav.css" />
+    <link rel="stylesheet" href="css/stylebgm.css" />
+    <link rel="stylesheet" href="css/stylefont.css" />
+    <script src="js/scriptnav.js"></script>
+    <script src="scriptform.js" defer></script>
+    <script src="js/scriptbgm.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+    <source src="Video/bgvideotest.mp4" type="video/mp4">
+  </video>
+    <header>
+      <div class="logo-area">
+        <div class="music-container">
+          <button onclick="toggleMusic()" class="music-btn">🎵</button>
+          <input
+            type="range"
+            id="volume-control"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0.5"
+          />
+        </div>
+        <h2 class="logo">SUZAKU ARMY</h2>
+      </div>
+      <audio id="bg-music" loop>
+        <source src="../Music/Elden Ring Main Theme.mp3" type="audio/mpeg" />
+      </audio>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navigation">
+        <a href="">PROFIL</a>
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">SERVICE</a>
+        <button class="btnLogin-popup" onclick="window.location.href='Login/index-login.html'">LOGIN</button>
+      </nav>
+    </header>
+</body>
+</html>
