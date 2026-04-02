@@ -68,12 +68,12 @@ header {
 }
 
 .navigation .btnLogin-popup {
-    width: 75px;
+    width: 100px;
     height: 30px;
     font-family: 'Orbitron',sans-serif;
     background:rgba(6, 106, 221, 0.541);
     border: 2px solid #0b50a5;
-    border-radius: 6px;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 1.1em;
     font-weight: 500;
